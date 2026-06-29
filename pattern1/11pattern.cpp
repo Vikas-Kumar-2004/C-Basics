@@ -1,0 +1,24 @@
+// Program to print an X (cross) star pattern
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cout << "Enter the number of rows: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            // Print star on both diagonals
+            if (i == j || i + j == n + 1)
+                cout << "*";
+            else
+                cout << " ";
+        }
+        cout << endl;
+    }
+}

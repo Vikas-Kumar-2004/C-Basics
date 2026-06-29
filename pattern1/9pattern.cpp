@@ -1,0 +1,21 @@
+// Program to print an alphabet square pattern (A B C ...) using ASCII values
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cout << "Enter number of rows: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            // j + 64 converts 1→A, 2→B, 3→C ...
+            cout << (char)(j + 64) << " ";
+        }
+        cout << endl;
+    }
+}
